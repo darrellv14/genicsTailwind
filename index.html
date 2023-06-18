@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <div class="flex justify-center">
+      <div class="w-full max-w-xs">
+        <h1 class="text-center text-black-1000 text-2xl font-semibold border-2 border-sky-500 rounded-md drop-shadow-md	">BMI Calculator Darrell</h1>
+        <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+          <div class="mb-4">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="weight"
+            >
+              Input Weight (KG)
+            </label>
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="weight"
+              type="text"
+              placeholder="Weight (KG)"
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="height"
+            >
+              Input Height (M)
+            </label>
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="height"
+              type="text"
+              placeholder="Height (M)"
+            />
+          </div>
+
+          <div class="flex items-center justify-between">
+            <button
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="button"
+              onclick="calculateBMI()"
+            >
+              Calculate
+            </button>
+            <p class="text-center text-black-500 text-xs" id="result"></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
